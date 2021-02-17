@@ -60,7 +60,7 @@ function App() {
           <Button mx={10} size="lg" variant="solid" onClick={handleInvert}>
             Invert
           </Button>
-          <Button mx={10} size="lg" variant="solid" onClick={handleInvert}>
+          <Button mx={10} size="lg" variant="solid" onClick={handleClear}>
             Clear
           </Button>
         </Flex>
