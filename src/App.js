@@ -86,7 +86,7 @@ function App() {
         </Box>
       </Box>
       <Flex alignContent="center" justifyContent="center">
-        <Box w={150} m={50}>
+        <Box w={200} m={50}>
           {JSON.stringify(values, null, 2).replace(/"/g, "")}
         </Box>
       </Flex>
