@@ -38,13 +38,13 @@ function App() {
     <Flex direction="column" textAlign="center">
       <Box>
         <Flex alignContent="center" justifyContent="center">
-          <Box m={100}>
-            <SimpleGrid columns={8} spacing={4}>
+          <Box mt={20} mb={10}>
+            <SimpleGrid columns={8} spacing={2}>
               {pixels.map((val, index) => (
                 <Box
                   key={index}
-                  h={50}
-                  w={50}
+                  h={8}
+                  w={8}
                   bg={val ? "white" : "gray"}
                   outlineColor="gray"
                   outline="solid gray"
@@ -57,36 +57,36 @@ function App() {
       </Box>
       <Box>
         <Flex alignContent="center" justifyContent="center">
-          <Button mx={10} size="lg" variant="solid" onClick={handleInvert}>
+          <Button mx={4} size="lg" variant="solid" onClick={handleInvert}>
             Invert
           </Button>
-          <Button mx={10} size="lg" variant="solid" onClick={handleClear}>
+          <Button mx={4} size="lg" variant="solid" onClick={handleClear}>
             Clear
           </Button>
         </Flex>
       </Box>
       <Box>
-        <Box m={25}>
+        <Box mt={10}>
           On:
           <Input
             w={200}
             onChange={handleOn}
             placeholder="ON value or (R,G,B)"
-            ml={10}
+            ml={4}
           />
         </Box>
-        <Box m={25}>
+        <Box mt={2}>
           Off:
           <Input
             w={200}
             onChange={handleOff}
             placeholder="OFF value (R,G,B)"
-            ml={10}
+            ml={4}
           />
         </Box>
       </Box>
       <Flex alignContent="center" justifyContent="center">
-        <Box w={400} m={50}>
+        <Box w={400} m={8}>
           {JSON.stringify(values, null, 2).replace(/"/g, "")}
         </Box>
       </Flex>
